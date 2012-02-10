@@ -12,19 +12,19 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/dropbox_apps/ahd_boilerplate/css/bootstrap.css" rel="stylesheet">
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
-    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/dropbox_apps/ahd_boilerplate/css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="/dropbox_apps/ahd_boilerplate/favicon.ico">
+    <link rel="apple-touch-icon" href="/dropbox_apps/ahd_boilerplate/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/dropbox_apps/ahd_boilerplate/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/dropbox_apps/ahd_boilerplate/images/apple-touch-icon-114x114.png">
   </head>
 
   <body>
@@ -53,25 +53,43 @@
 
       <h1>adge's starter template</h1>
       <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+			
+			<!-- QR Code jQuery Plugin -->
+			<!-- Add this code where you want the QR Code to appear -->
+			<div id="qrcode"></div>
 
+
+			<!-- END :: QR Code jQuery Plugin -->
+			
     </div> <!-- /container -->
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap-transition.js"></script>
-    <script src="/js/bootstrap-alert.js"></script>
-    <script src="/js/bootstrap-modal.js"></script>
-    <script src="/js/bootstrap-dropdown.js"></script>
-    <script src="/js/bootstrap-scrollspy.js"></script>
-    <script src="/js/bootstrap-tab.js"></script>
-    <script src="/js/bootstrap-tooltip.js"></script>
-    <script src="/js/bootstrap-popover.js"></script>
-    <script src="/js/bootstrap-button.js"></script>
-    <script src="/js/bootstrap-collapse.js"></script>
-    <script src="/js/bootstrap-carousel.js"></script>
-    <script src="/js/bootstrap-typeahead.js"></script>
-
+    <script src="/dropbox_apps/ahd_boilerplate/js/jquery.min.js"></script>
+    <script src="/dropbox_apps/ahd_boilerplate/js/bootstrap-transition.js"></script>
+    <script src="/dropbox_apps/ahd_boilerplate/js/bootstrap-alert.js"></script>
+    <script src="/dropbox_apps/ahd_boilerplate/js/bootstrap-modal.js"></script>
+    <script src="/dropbox_apps/ahd_boilerplate/js/bootstrap-dropdown.js"></script>
+    <script src="/dropbox_apps/ahd_boilerplate/js/bootstrap-scrollspy.js"></script>
+    <script src="/dropbox_apps/ahd_boilerplate/js/bootstrap-tab.js"></script>
+    <script src="/dropbox_apps/ahd_boilerplate/js/bootstrap-tooltip.js"></script>
+    <script src="/dropbox_apps/ahd_boilerplate/js/bootstrap-popover.js"></script>
+    <script src="/dropbox_apps/ahd_boilerplate/js/bootstrap-button.js"></script>
+    <script src="/dropbox_apps/ahd_boilerplate/js/bootstrap-collapse.js"></script>
+    <script src="/dropbox_apps/ahd_boilerplate/js/bootstrap-carousel.js"></script>
+    <script src="/dropbox_apps/ahd_boilerplate/js/bootstrap-typeahead.js"></script>
+		<!-- QR Code jQuery Plugin -->
+		<script src="/dropbox_apps/ahd_boilerplate/js/jquery.qrcode.js"></script>
+		<script src="/dropbox_apps/ahd_boilerplate/js/qrcode.js"></script>
+		
+		<script>
+			//jQuery('#qrcode').qrcode("this plugin is great");
+			$('#qrcode').qrcode({
+				render	: "table",
+				text	: "http://jetienne.com"
+			});	
+		</script>
+		<!-- END :: QR Code jQuery Plugin -->
   </body>
 </html>
